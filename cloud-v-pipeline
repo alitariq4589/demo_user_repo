@@ -1,5 +1,5 @@
 node("qemuusermode_runner1"){
-  checkout scm # clone the repo on runner/build executor
+  checkout scm // clone the repo on runner/build executor
   stage("Compilation Stage"){
     sh'''#!/bin/bash
       gcc ./demouser_file.c -o demouser.o
